@@ -1,0 +1,90 @@
+1. 🚘 Plaka Tespiti & OCR (Detection + Recognition)
+📚 Konu: Nesne tespiti + karakter tanıma
+
+📷 Girdi: Araç görselleri
+
+🎯 Amaç: Plaka bölgesini bul ve karakterleri tanı
+
+🧠 Teknoloji: CNN, YOLOv8 / Keras, OpenCV, Tesseract / kendi OCR modeli
+
+💡 Not: Keremberke kullanmadan sıfırdan model de eğitilebilir (senin niyetin de bu yöndeydi)
+
+2. 📦 Ürün Görselinden Kategori Tahmini
+📚 Konu: Görüntü sınıflandırma
+
+🖼 Girdi: Ürün fotoğrafları
+
+🎯 Amaç: Ürün giyim mi elektronik mi? Otomatik etiketleme
+
+🧠 Teknoloji: CNN (Keras), MobileNetV2, VGG16 + transfer learning
+
+🧩 Dataset: Amazon, Open Products Dataset, ya da senin örneklerin
+
+3. 🧾 Fatura / Belge İçeriğinden Veri Çıkarma (OCR + NLP)
+📚 Konu: Görüntü → Metin → Bilgi
+
+🎯 Amaç: Görsel fatura → tarih, tutar, firma çıkarımı
+
+🧠 Teknoloji: CNN + OCR + LSTM, LayoutLM
+
+🤖 Kullanım: Şirketlerde belge otomasyonu
+
+💡 Ekstra: RAG ya da prompt tabanlı modellerle veri çekme
+
+4. 🧠 EEG Sinyali ile Duygu Tahmini
+📚 Konu: Zaman serisi sınıflandırma
+
+🧠 Girdi: EEG (beyin dalgası) verileri
+
+🎯 Amaç: Mutlu, üzgün, sinirli gibi sınıflandırmalar
+
+🧠 Teknoloji: LSTM, CNN-1D, Keras
+
+💡 Dataset: DEAP, SEED, PhysioNet gibi açık veriler
+
+5. 🗣️ Sesli Komutlardan Aksiyon Tespiti (Speech Commands)
+📚 Konu: Ses sınıflandırma
+
+🎙 Girdi: “stop”, “go”, “left” gibi sesler
+
+🎯 Amaç: Raspberry Pi / mobil uygulamada sesle kontrol
+
+🧠 Teknoloji: CNN + MFCC özellikleri, TensorFlow/Keras
+
+6. 📉 Zaman Serisi ile Tahmin (Stock / Hava / Talep)
+📚 Konu: Regression + Sequence Modeling
+
+🧠 Teknoloji: LSTM, GRU, Transformer
+
+📈 Girdi: Günlük veri (sıcaklık, fiyat vs.)
+
+🎯 Amaç: Gelecek tahmini
+
+7. 🏥 Medikal Görüntüden Teşhis (X-ray, MRI)
+📚 Konu: Görüntü sınıflandırma veya segmentasyon
+
+🎯 Amaç: COVID, akciğer nodülü gibi teşhis
+
+🧠 Teknoloji: CNN, U-Net, ResNet
+
+🧩 Dataset: ChestX-ray, LUNA16, BraTS
+
+8. 🎨 Görselden Sanat Tarzı Dönüştürme (Style Transfer)
+📚 Konu: GAN / CNN
+
+🎯 Amaç: Normal fotoğrafı Van Gogh stiline çevir
+
+🧠 Teknoloji: TensorFlow, Keras, PyTorch
+
+💡 Ekstra: Kendi stilini öğretebilirsin
+
+🛠 Proje Seçimi Nasıl Yapılır?
+Senin deneyimlerine göre şunları öneririm:
+
+Eğer image processing ve detection ilgini çekiyorsa → Plaka Tespiti (OCR dahil)
+
+Eğer klasik deep learning practice istiyorsan → Görüntü Sınıflandırma (transfer learning ile)
+
+Eğer web tabanlı bir şey olsun diyorsan → Görselden ürün sınıflandırıp eticaret backend’ine entegre
+
+Eğer LSTM öğrenmek istiyorsan → Zaman serisi tahmini veya EEG gibi sequence data
